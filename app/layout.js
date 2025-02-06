@@ -13,7 +13,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta property="og:title" content="Mi Portfolio" />
+        <meta property="og:description" content="Mi página personal con proyectos" />
+        <meta property="og:image" content="https://mi-portfolio.vercel.app/webog.jpg" />
+        <meta property="og:type" content="website" />
+      </head>
       <body className={pressStart2P.className}>
         <div className="min-h-screen bg-gray-900 text-white">
           <Header />
