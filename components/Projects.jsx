@@ -36,7 +36,7 @@ const Projects = () => {
       <div className="relative w-15/16 mx-auto overflow-hidden p-4">
 
         <div className="flex gap-2 transition-transform duration-300 w-[1800px]"
-          style={{ transform: `translateX(-${startIndex * 600}px)` }}>
+          style={{ transform: `translateX(-${startIndex * 750}px)` }}>
 
           {projects.map((project) => (
             <div
@@ -68,13 +68,13 @@ const Projects = () => {
             </div>
           ))}
         </div>
-        <div className="absolute top-1/3 left-0">
-          <button onClick={prevSlide} className=" btn-arcade mx-4"></button>
-        </div>
-        <div className="absolute top-1/3 -right-4">
-          <button onClick={nextSlide} className="btn-arcade mx-4"></button>
-        </div>
       </div>
+        <div className="flex flex-row mt-8 justify-center">
+          <img src="/arrowleft.png" alt="arrowleft" width={100} height={100}/>
+          <button onClick={prevSlide} className=" btn-arcade mx-4"></button>
+          <button onClick={nextSlide} className="btn-arcade mx-4"></button>
+          <img src="/arrowrigth.png" alt="arrowrigth" width={100} height={100}/>
+        </div>
     </section>
   )
 }

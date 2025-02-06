@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20">
       <h2 className="text-3xl font-bold mb-10 neon-text text-center">Inserte una ficha para continuar</h2>
-      <form onSubmit={handleSubmit} method="post" className="w-1/2 mx-auto">
+      <form onSubmit={handleSubmit} method="post" className="relative w-1/2 mx-auto">
         <div className="mb-4">
           <label htmlFor="name" className="block mb-2">
             Nombre
@@ -55,7 +55,12 @@ const Contact = () => {
           >Enviar
           </button>
         </div>
-        {status && <p className="mx-auto">{status}</p>}
+        {status && (
+          <div className="absolute bg-gray-800 p-8 pixel-borders top-20 left-1/5 ">
+            <p >{status}</p>
+            <button type="button" onClick={() => setStatus(null)} className="mt-8 ml-36 p-2 pixel-borders cursor-pointer">Cerrar</button>
+          </div>
+        )}
       </form>
     </section>
   )
