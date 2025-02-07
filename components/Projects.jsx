@@ -20,8 +20,9 @@ const Projects = () => {
   const [imageWidth, setImageWidth] = useState(350)
 
   useEffect(() => {
+    if (typeof window === "undefined") return
     const updateSize = () => {
-      const width = Window.innerWidth
+      const width = window.innerWidth
       setWindowWidth(width)
 
       if (width > 1280) {
