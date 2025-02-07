@@ -21,7 +21,7 @@ const Projects = () => {
 
   useEffect(() => {
     const updateSize = () => {
-      const width = window.innerWidth
+      const width = Window.innerWidth
       setWindowWidth(width)
 
       if (width > 1280) {
