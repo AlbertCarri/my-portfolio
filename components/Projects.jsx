@@ -19,7 +19,7 @@ const Projects = () => {
   const [imageWidth, setImageWidth] = useState(350)
 
   useEffect(() => {
-    if (typeof window === "undefined") return
+    if (typeof window === "undefined") return //window no puede ser prerenderizado
     const updateSize = () => {
       const width = window.innerWidth
       setWindowWidth(width)
