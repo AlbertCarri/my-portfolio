@@ -20,10 +20,10 @@ const Projects = () => {
 
   useEffect(() => {
     console.log('window:', typeof window)
-    if (typeof window !== "undefined") {
+    if (typeof window === "object") {
 
       const updateSize = () => {
-        const width = 1800
+        const width = window.innerWidth
         if (width > 1280) {
           setImageWidth(600)
           setVisibleImages(3)
