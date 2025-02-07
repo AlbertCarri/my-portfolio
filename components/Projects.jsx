@@ -20,7 +20,7 @@ const Projects = () => {
 
   useEffect(() => {
     console.log('window:', typeof window)
-    if (typeof window === "object") {
+    if (typeof window !== "undefined") {
 
       const updateSize = () => {
         const width = window.innerWidth
