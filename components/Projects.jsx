@@ -15,7 +15,6 @@ const projects = [
 
 const Projects = () => {
   const [startIndex, setStartIndex] = useState(0)
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [visibleImages, setVisibleImages] = useState(3)
   const [imageWidth, setImageWidth] = useState(350)
 
