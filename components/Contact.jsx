@@ -50,10 +50,9 @@ const Contact = () => {
           <textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Escriba su mensaje" rows={4} className="w-full px-3 py-2 bg-gray-800 rounded pixel-borders"></textarea>
         </div>
         <div className="flex w-full mt-10 justify-center">
-          <button type="submit"
-            className="bg-gray-800 px-3 py-2 pixel-borders cursor-pointer"
-          >Enviar
-          </button>
+          <div className="relative">
+            <button type="submit" className="btn-arcade-1p"></button>
+          </div>
         </div>
         {status && (
           <div className="absolute bg-gray-800 p-8 pixel-borders top-20 left-1/5 ">
@@ -67,3 +66,7 @@ const Contact = () => {
 }
 
 export default Contact
+
+//bg-gray-800 px-3 py-2 pixel-borders cursor-pointer
+
+//onSubmit={handleSubmit}
