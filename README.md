@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+<div align="center">
+<img with="100%" src="public/webog.png">
+</div>
+<br>
 
-First, run the development server:
+<h1 align="center">
+Mi Portfolio
+</h1>
+<h2 align="center">
+Diseño retro arcades 100% mio
+</h2>
+<br>
+<br>
+Para el diseño descargué la fuente "Press_Start_2P" desde la página GOOGLE FONTS.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Botones estilo arcade diseñados enteramente por mi, porque los que encontré no me gustaron🥱.  
+Los SVG son algunos de "Lucide" y otros random y modificados.
+<br>
+<br>
+🎨<b>Estilo</b>: Tailwind CSS v4.0 y CSS puro para los botones arcade.  
+🛠 <b>Framework</b>: Next.js y React  
+📧<b>Api de terceros</b>: SendGrid  
+💾<b>Deployed</b>: Vercel desde GitHub
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h2>Acerca de mi:</h2>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Me llamo Alberto Edelmiro Carrizo, y estoy en busca de un puesto de desarrollador Frontend. Aunque no me considero un experto, mi pasión por el desarrollo web, mi compromiso con el aprendizaje continuo y mi dedicación a encarar cada proyecto con responsabilidad y entusiasmo son mis principales motores.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Durante los últimos meses, he adquirido experiencia trabajando con tecnologías como HTML, CSS, JavaScript, React, Next.js y Tailwind CSS. También adquirí experiencia con el CMS de Supabase utilizando las bases de datos relacionales y storage para archivos. Estas herramientas me han permitido llevar a cabo proyectos desafiantes, incluyendo la integración de APIs y el manejo de bases de datos. Cada proyecto ha sido una oportunidad para mejorar mis habilidades técnicas y reforzar mi capacidad para resolver problemas.
 
-## Learn More
+Además de mis conocimientos técnicos, tengo una sólida ética de trabajo y una gran adaptabilidad. Mi experiencia previa en Proton SRL como diseñador gráfico y gestión de clientes me ha enseñado a enfrentar desafíos con creatividad y perseverancia.
 
-To learn more about Next.js, take a look at the following resources:
+Estoy buscando un entorno donde pueda aportar mis conocimientos y, al mismo tiempo, seguir aprendiendo de un equipo talentoso. Creo que tu empresa sería un lugar ideal para crecer profesionalmente y contribuir al éxito de sus proyectos.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+Te invito a ver mi portfolio:
+[Mi Portfolio](https://alberto-carrizo.vercel.app/)
