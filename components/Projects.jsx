@@ -19,11 +19,11 @@ const Projects = () => {
   const [imageWidth, setImageWidth] = useState(350)
 
   useEffect(() => {
-    console.log('window:', typeof(window))
+    console.log('window:', typeof window)
     if (typeof window !== "undefined") {
 
       const updateSize = () => {
-        const width = window.innerWidth
+        const width = 1800
         if (width > 1280) {
           setImageWidth(600)
           setVisibleImages(3)
@@ -37,10 +37,10 @@ const Projects = () => {
       }
 
       updateSize()
-      window.addEventListener('resize', handleResize)
+      window.addEventListener('resize', updateSize)
 
       return () => {
-        window.removeEventListener('resize', handleResize)
+        window.removeEventListener('resize', updateSize)
       }
     }
   }, [])
