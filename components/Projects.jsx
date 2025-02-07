@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Image from "next/image"
 
 const projects = [
@@ -15,7 +15,24 @@ const projects = [
 
 const Projects = () => {
   const [startIndex, setStartIndex] = useState(0)
-  const visibleImages = 3
+  const [windowWith, setWindowWith] = useState(100)
+  const [visibleImages, setVisibleImages] = useState(3)
+
+  useEffect(() => {
+    const winW = window.innerWidth | 1800
+    if (winW > 1280) {
+      setWindowWith(750)
+      setVisibleImages(3)
+    } else {
+      if (winW > 768 && winW < 1280) {
+        setWindowWith(500)
+        setVisibleImages(2)
+      } else {
+        setWindowWith(350)
+        setVisibleImages(1)
+      }
+    }
+  }, [])
 
   const nextSlide = () => {
     if (startIndex < projects.length - visibleImages) {
@@ -30,19 +47,18 @@ const Projects = () => {
   }
 
   return (
-    <section id="projects" className="py-20">
-      <h2 className="text-3xl font-bold mb-10 neon-text text-center">Mis proyectos terminados</h2>
+    <section id="projects" className="md:py-20 py-4">
+      <h2 className="md:text-3xl text-xl font-bold mb-10 neon-text text-center">Mis proyectos terminados</h2>
 
-      <div className="relative w-15/16 mx-auto overflow-hidden p-4">
+      <div className="relative md:w-15/16 w-full mx-auto overflow-hidden p-4">
 
         <div className="flex gap-2 transition-transform duration-300 w-[1800px]"
-          style={{ transform: `translateX(-${startIndex * 750}px)` }}>
+          style={{ transform: `translateX(-${startIndex * windowWith}px)` }}>
 
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-gray-800 1/4 flex-shrink-0 rounded-lg pixel-borders mx-4"
-              style={{ width: "600px" }}
+              className="md:w-[600px] w-[300px] bg-gray-800 1/4 flex-shrink-0 rounded-lg pixel-borders mx-4"
             >
               <Image
                 src={project.image || "/placeholder.png"}
@@ -69,12 +85,12 @@ const Projects = () => {
           ))}
         </div>
       </div>
-        <div className="flex flex-row mt-8 justify-center">
-          <img src="/arrowleft.png" alt="arrowleft" width={100} height={100}/>
-          <button onClick={prevSlide} className=" btn-arcade mx-4"></button>
-          <button onClick={nextSlide} className="btn-arcade mx-4"></button>
-          <img src="/arrowrigth.png" alt="arrowrigth" width={100} height={100}/>
-        </div>
+      <div className="flex flex-row mt-8 justify-center items-center">
+        <img src="/arrowleft.png" alt="arrowleft" className="md:w-24 md:h-24 w-4 h-4" />
+        <button onClick={prevSlide} className=" btn-arcade mx-4"></button>
+        <button onClick={nextSlide} className="btn-arcade mx-4"></button>
+        <img src="/arrowrigth.png" alt="arrowrigth" className="md:w-24 md:h-24 w-4 h-4" />
+      </div>
     </section>
   )
 }
