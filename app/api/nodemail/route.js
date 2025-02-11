@@ -14,7 +14,7 @@ export async function POST(req) {
         })
 
         await transporter.sendMail({
-            from: `"Formulario Web" <${process.env.GMAIL_USER}>`,
+            from: `"Visitaron tu Portfolio" <${process.env.GMAIL_USER}>`,
             to: process.env.RECIPIENT_EMAIL,
             subject: 'Nuevo mensaje desde el formulario',
             html: `
