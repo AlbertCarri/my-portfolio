@@ -12,7 +12,10 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-
+    if (formData.name === "" || formData.email === "" || formData.message === "") {
+      setStatus("Faltan datos en el formulario")
+      return
+    }
     const response = await fetch("/api/nodemail", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
