@@ -39,4 +39,4 @@ Estoy buscando un entorno donde pueda aportar mis conocimientos y, al mismo tiem
 
 
 Te invito a ver mi portfolio:
-[Mi Portfolio](https://alberto-carrizo.vercel.app/)
+[Mi Portfolio](https://carrizo-alberto.vercel.app/)
