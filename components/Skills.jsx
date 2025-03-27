@@ -3,11 +3,12 @@ import { CodeSVG, DatabaseSVG, GithubSVG, PaletteSVG, ReactSVG, NextjsSVG } from
 
 const skills = [
   { id: 1, name: "Html.CSS.JS", icon: CodeSVG },
-  { id: 2, name: "Next.js", icon: NextjsSVG },
-  { id: 3, name: "React", icon: ReactSVG },
-  { id: 4, name: "Supabase", icon: DatabaseSVG },
-  { id: 5, name: "TailwindCSS", icon: PaletteSVG },
-  { id: 6, name: "GitHub", icon: GithubSVG },
+  { id: 2, name: "TypeScript", icon: CodeSVG },
+  { id: 3, name: "Next.js", icon: NextjsSVG },
+  { id: 4, name: "React", icon: ReactSVG },
+  { id: 5, name: "Supabase", icon: DatabaseSVG },
+  { id: 6, name: "TailwindCSS", icon: PaletteSVG },
+  
 ]
 
 const Skills = () => {
@@ -18,7 +19,7 @@ const Skills = () => {
         {skills.map((skill) => (
           <div key={skill.id} className="flex flex-col items-center">
             <div className="w-20 h-20 bg-gray-800 rounded-lg flex items-center justify-center mb-4 pixel-borders">
-              <skill.icon size={48} className="text-neon-blue" />
+              <skill.icon size={48} />
             </div>
             <h3 className="md:text-lg text-xs font-bold">{skill.name}</h3>
           </div>

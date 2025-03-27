@@ -24,24 +24,52 @@ body {
 
 @layer components {
   .pixel-borders {
-    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px var(--neon-blue), 0 0 0 6px #ffffff, 0 0 0 8px var(--neon-pink);
+    box-shadow: 0 0 2px 2px #ffffff, 0 0 2px 4px var(--neon-blue), 0 0 2px 6px #ffffff,
+      0 0 2px 8px var(--neon-pink);
     border-radius: 10px;
+    animation: flash 1s infinite;
+  }
+
+  /*.pixel-borders:hover {
+    box-shadow: 0 0 0 8px var(--neon-pink);
+    border-radius: 10px;
+  }*/
+
+  @keyframes flash {
+    0%,
+    100% {
+      box-shadow: 0 0 2px 2px #ffffff, 0 0 2px 4px var(--neon-blue),
+        0 0 2px 6px #ffffff, 0 0 2px 8px var(--neon-pink);
+    }
+    25% {
+      box-shadow: 0 0 2px 2px var(--neon-blue), 0 0 2px 4px #ffffff,
+        0 0 2px 6px var(--neon-pink), 0 0 2px 8px #ffffff;
+    }
+    50% {
+      box-shadow: 0 0 2px 2px #ffffff, 0 0 2px 4px var(--neon-pink),
+        0 0 2px 6px #ffffff, 0 0 2px 8px var(--neon-blue);
+    }
+    75% {
+      box-shadow: 0 0 2px 2px var(--neon-pink), 0 0 2px 4px #ffffff,
+        0 0 2px 6px var(--neon-blue), 0 0 2px 8px #ffffff;
+    }
   }
 
   .neon-text {
-    text-shadow: 0 0 2px var(--neon-blue), 0 0 5px var(--neon-blue), 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+    text-shadow: 0 0 2px var(--neon-blue), 0 0 5px var(--neon-blue),
+      0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
   }
 
   .neon-text-menu {
-    text-shadow: 0 0 1px var(--neon-blue), 0 0 1px var(--neon-blue), 0 0 2px var(--neon-blue), 0 0 4px var(--neon-blue);
+    text-shadow: 0 0 1px var(--neon-blue), 0 0 1px var(--neon-blue),
+      0 0 2px var(--neon-blue), 0 0 4px var(--neon-blue);
   }
 
   .neon-text-menu:hover {
-    text-shadow: 0 0 5px var(--neon-blue), 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue), 0 0 40px var(--neon-blue);
+    text-shadow: 0 0 5px var(--neon-blue), 0 0 10px var(--neon-blue),
+      0 0 20px var(--neon-blue), 0 0 40px var(--neon-blue);
   }
-
 }
-
 
 .btn-arcade {
   position: relative;
@@ -50,7 +78,8 @@ body {
   border: none;
   outline: none;
   background: #d1940f;
-  box-shadow: inset 0 2px 4px 1px #201402, inset 0 2px 10px 10px #ad6a06, 0 2px 6px #271903;
+  box-shadow: inset 0 2px 4px 1px #201402, inset 0 2px 10px 10px #ad6a06,
+    0 2px 6px #271903;
   border-radius: 50%;
   cursor: pointer;
   z-index: 0;
@@ -64,13 +93,15 @@ body {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  box-shadow: inset 0 3px 2px 2px #201402, inset 0 2px 10px 10px #ad6a06, 0 2px 6px #271903;
+  box-shadow: inset 0 3px 2px 2px #201402, inset 0 2px 10px 10px #ad6a06,
+    0 2px 6px #271903;
   background: #d1940f;
   z-index: 1;
 }
 
 .btn-arcade:active::before {
-  box-shadow: inset 0 0px 2px 2px #201402, inset 0 2px 10px 10px #ad6a06, 0 2px 6px #271903;
+  box-shadow: inset 0 0px 2px 2px #201402, inset 0 2px 10px 10px #ad6a06,
+    0 2px 6px #271903;
 }
 
 .btn-arcade-1p {
@@ -80,7 +111,8 @@ body {
   border: none;
   outline: none;
   background: #bdbdbd;
-  box-shadow: inset 0 2px 4px 1px #272727, inset 0 2px 10px 10px #777777, 0 2px 6px #3d3d3d;
+  box-shadow: inset 0 2px 4px 1px #272727, inset 0 2px 10px 10px #777777,
+    0 2px 6px #3d3d3d;
   border-radius: 50%;
   cursor: pointer;
   z-index: 0;
@@ -94,16 +126,18 @@ body {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  box-shadow: inset 0 3px 2px 2px #272727, inset 0 2px 10px 10px #777777, 0 2px 6px #3d3d3d;
+  box-shadow: inset 0 3px 2px 2px #272727, inset 0 2px 10px 10px #777777,
+    0 2px 6px #3d3d3d;
   background: #bdbdbd;
   z-index: 1;
 }
 
 .btn-arcade-1p:active::after {
-  box-shadow: inset 0 0px 2px 2px #272727, inset 0 2px 10px 10px #777777, 0 2px 6px #3d3d3d;
+  box-shadow: inset 0 0px 2px 2px #272727, inset 0 2px 10px 10px #777777,
+    0 2px 6px #3d3d3d;
 }
 
-.btn-arcade-1p::before{
+.btn-arcade-1p::before {
   content: url("/1playerxs.png");
   position: absolute;
   top: 24px;
@@ -113,6 +147,6 @@ body {
   z-index: 2;
 }
 
-.btn-arcade-1p:active::before{
-  top:22px;
+.btn-arcade-1p:active::before {
+  top: 22px;
 }

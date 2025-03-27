@@ -5,12 +5,13 @@ import Image from "next/image"
 
 const projects = [
   { id: 1, title: "CMS Restó", image: "/resto.png", link: "https://cms-resto.vercel.app/", github: "https://github.com/AlbertCarri/cms-supabase" },
-  { id: 2, title: "App del Clima", image: "/clima.png", link: "https://groundhog-weather.vercel.app/", github: "https://github.com/AlbertCarri/groundhog-weather" },
+  { id: 2, title: "App del Clima", image: "/clima.png", link: "https://groundhog-weather.vercel.app/", github: "https://github.com/AlbertCarri/groundhog-weather-typescript" },
   { id: 3, title: "Juego del tetris", image: "/tetris.png", link: "https://tetris-javascript-2024.netlify.app/", github: "https://github.com/AlbertCarri/tetris-game" },
   { id: 4, title: "Página UmamiVeg", image: "/umamiveg.png", link: "https://umamiveg.vercel.app//", github: "https://github.com/AlbertCarri/umamiveg" },
   { id: 5, title: "Juego del Trivia", image: "/triviaprog.png", link: "https://trivia-frontend-five.vercel.app/", github: "https://github.com/AlbertCarri/trivia-frontend" },
   { id: 6, title: "Juego del Trivia", image: "/triviaciencias.png", link: "https://trivia-ciencia.vercel.app/", github: "https://github.com/AlbertCarri/trivia-ciencia" },
-  { id: 7, title: "Juego del pares", image: "/pares.png", link: "https://juego-de-pares.netlify.app/", github: "https://github.com/AlbertCarri/Juego-de-pares" },
+  { id: 7, title: "ttf to woff/woff2", image: "/woff.png", link: "https://woff-converter.vercel.app/", github: "https://github.com/AlbertCarri/woff-converter" },
+  { id: 8, title: "Juego del pares", image: "/pares.png", link: "https://juego-de-pares.netlify.app/", github: "https://github.com/AlbertCarri/Juego-de-pares" },
 ]
 
 const Projects = () => {
@@ -86,7 +87,7 @@ const Projects = () => {
                 className="w-full rounded-lg"
               />
               <div className="flex flex-col p-4">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                <h3 className="text-2xl font-bold mb-2 mx-auto">{project.title}</h3>
                 <a
                   href={project.link}
                   target="blank"
@@ -97,7 +98,7 @@ const Projects = () => {
                 <a
                   href={project.github}
                   target="blank"
-                  className="neon-text-menu hover:neon-text-menu-hover"
+                  className="neon-text-menu hover:neon-text-menu-hover mt-2"
                 >
                   Ver código en Github
                 </a>
