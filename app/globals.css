@@ -30,11 +30,6 @@ body {
     animation: flash 1s infinite;
   }
 
-  /*.pixel-borders:hover {
-    box-shadow: 0 0 0 8px var(--neon-pink);
-    border-radius: 10px;
-  }*/
-
   @keyframes flash {
     0%,
     100% {
@@ -56,13 +51,11 @@ body {
   }
 
   .neon-text {
-    text-shadow: 0 0 2px var(--neon-blue), 0 0 5px var(--neon-blue),
-      0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+    text-shadow: 0 0 10px var(--neon-blue);
   }
 
   .neon-text-menu {
-    text-shadow: 0 0 1px var(--neon-blue), 0 0 1px var(--neon-blue),
-      0 0 2px var(--neon-blue), 0 0 4px var(--neon-blue);
+    text-shadow: 0 0 4px var(--neon-blue);
   }
 
   .neon-text-menu:hover {

@@ -1,20 +1,22 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col md:flex-row md:w-15/16 w-full p-2 items-center md:mb-0 mb-14">
+    <section className="flex flex-col md:flex-row w-full p-2 items-center md:mb-0 mb-14 ">
       <div className="md:w-2/3 w-full mx-auto text-center">
-        <h1 className="md:text-4xl/1 lg:text-6xl/24 text-xl font-bold mb-4 neon-text">
-          Bienvenidos a 
+        <h1 className="sm:text-2xl/10 lg:text-4xl/18 text-xl font-bold mb-8 neon-text">
+          Bienvenidos a Mi
           <br />
-          Mi Portfolio Retro
+          Portfolio Retro
         </h1>
-        <p className="md:text-xl text-xs mb-8">Creando experiencias web con un toque nostálgico</p>
+        <p className="sm:text-sm lg:text-md text-xs mb-8 mx-10">
+          Creando experiencias web con un toque nostálgico
+        </p>
       </div>
       <div className="md:w-1/3 w-full">
         <div className="mx-auto">
           <Image
-            src="/perfilCartoon.png"
+            src="/mi-pixel-version.webp"
             alt="Pixel Art Developer"
             width={256}
             height={256}
@@ -23,8 +25,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
-
+export default Hero;

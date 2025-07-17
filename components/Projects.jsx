@@ -26,10 +26,10 @@ const Projects = () => {
       const updateSize = () => {
         const width = window.innerWidth
         if (width > 1280) {
-          setImageWidth(600)
-          setVisibleImages(3)
+          setImageWidth(300)
+          setVisibleImages(2)
         } else if (width > 768) {
-          setImageWidth(600)
+          setImageWidth(300)
           setVisibleImages(2)
         } else {
           setImageWidth(300)

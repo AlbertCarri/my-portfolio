@@ -21,7 +21,7 @@ const Skills = () => {
             <div className="w-20 h-20 bg-gray-800 rounded-lg flex items-center justify-center mb-4 pixel-borders">
               <skill.icon size={48} />
             </div>
-            <h3 className="md:text-lg text-xs font-bold">{skill.name}</h3>
+            <h3 className="md:text-sm text-xs font-bold">{skill.name}</h3>
           </div>
         ))}
       </div>
