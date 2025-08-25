@@ -62,6 +62,13 @@ const projects = [
   },
   {
     id: 9,
+    title: "UI components",
+    image: "/componentsui.webp",
+    link: "https://uicomponents.edelbyte.com.ar/",
+    github: "https://github.com/AlbertCarri/ui-components",
+  },
+  {
+    id: 10,
     title: "Astróloca",
     image: "/astroloca.webp",
     link: "https://astroloca-bot.vercel.app/",
