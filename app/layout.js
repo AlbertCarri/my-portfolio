@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta property="og:title" content="Mi Portfolio" />
         <meta property="og:description" content="Mi página personal con proyectos" />
-        <meta property="og:image" content="https://edelbyte.com.ar//webog.webp" />
+        <meta property="og:image" content="https://edelbyte.com.ar/webog.webp" />
         <meta property="og:type" content="website" />
       </head>
       <body className={pressStart2P.className}>
