@@ -8,7 +8,7 @@ const pressStart2P = Press_Start_2P({ subsets: ["latin"], weight: "400" })
 
 export const metadata = {
   title: "Retro Arcade Portfolio",
-  description: "A vibrant, retro arcade-inspired web developer portfolio",
+  description: "Portfolio profesional de Alberto Edelmiro Carrizo",
 }
 
 export default function RootLayout({ children }) {
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta property="og:title" content="Mi Portfolio" />
         <meta property="og:description" content="Mi página personal con proyectos" />
-        <meta property="og:image" content="https://mi-portfolio.vercel.app/webog.jpg" />
+        <meta property="og:image" content="https://edelbyte.com.ar//webog.webp" />
         <meta property="og:type" content="website" />
       </head>
       <body className={pressStart2P.className}>
