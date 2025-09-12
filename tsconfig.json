@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/sitemap.js", "app/robots.js"  ],
   "exclude": [
     "node_modules"
   ]
