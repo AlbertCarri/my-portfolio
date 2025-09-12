@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Press_Start_2P } from "next/font/google";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "../components/Header"
+import Footer from "../components/Footer";
 import React from "react";
 
 const pressStart2P = Press_Start_2P({ subsets: ["latin"], weight: "400" });
