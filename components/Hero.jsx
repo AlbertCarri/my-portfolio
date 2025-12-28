@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="md:w-1/3 w-full">
         <div className="mx-auto">
           <Image
-            src="/mi-pixel-version.webp"
+            src="/mi-pixel-version2.webp"
             alt="Pixel Art Developer"
             width={256}
             height={256}
