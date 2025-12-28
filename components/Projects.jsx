@@ -34,10 +34,10 @@ const projects = [
   },
   {
     id: 5,
-    title: "Juego del Trivia",
-    image: "/triviaprog.webp",
-    link: "https://trivia-frontend-five.vercel.app/",
-    github: "https://github.com/AlbertCarri/trivia-frontend",
+    title: "Retos de código",
+    image: "/retosdecodigo.webp",
+    link: "https://codechallenge.edelbyte.com.ar/",
+    github: "https://github.com/AlbertCarri/codewar-alberto",
   },
   {
     id: 6,
@@ -55,10 +55,10 @@ const projects = [
   },
   {
     id: 8,
-    title: "Juego del pares",
-    image: "/pares.webp",
-    link: "https://juego-de-pares.netlify.app/",
-    github: "https://github.com/AlbertCarri/Juego-de-pares",
+    title: "SUDOKU",
+    image: "/sudoku.webp",
+    link: "https://sudoku.edelbyte.com.ar/",
+    github: "https://github.com/AlbertCarri/sudoku-game",
   },
   {
     id: 9,
