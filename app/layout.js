@@ -3,6 +3,7 @@ import { Press_Start_2P } from "next/font/google";
 import Header from "../components/Header"
 import Footer from "../components/Footer";
 import React from "react";
+import { Analytics } from "@vercel/analytics/next"
 
 const pressStart2P = Press_Start_2P({ subsets: ["latin"], weight: "400" });
 
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         <div className="min-h-screen bg-gray-900 text-white">
           <Header />
           {children}
+          <Analytics/>
           <Footer />
         </div>
       </body>
