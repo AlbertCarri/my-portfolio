@@ -13,7 +13,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="md:py-20 py-8 pixel-bg">
+    <section id="skills" className="flex flex-col h-svh md:py-20 py-8 pixel-bg justify-center">
       <h2 className="md:text-3xl text-xl font-bold mb-14 neon-text text-center">Habilidades</h2>
       <div className="grid grid-cols-2 md:grid-cols-6 md:gap-4 gap-8 justify-center">
         {skills.map((skill) => (
