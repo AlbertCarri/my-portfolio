@@ -120,7 +120,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="h-svh md:py-20 py-4">
+    <section id="projects" className="h-svh md:py-20 py-4 lg:mt-0 mt-16">
       <h2 className="md:text-3xl text-xl font-bold mb-10 neon-text text-center">
         Mis proyectos terminados
       </h2>

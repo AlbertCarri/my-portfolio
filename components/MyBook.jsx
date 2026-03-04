@@ -5,14 +5,14 @@ export default function MyBook() {
   return (
     <section
       id="mybook"
-      className="flex flex-col w-full h-svh p-2 items-center justify-center "
+      className="flex flex-col w-full lg:h-svh mt-12 lg:mt-0 p-2 items-center justify-center "
     >
-      <div className="flex flex-row w-full mt-8 p-4 items-center">
+      <div className="flex flex-col lg:flex-row w-full mt-8 p-4 items-center">
         <div className="text-left">
           <h2 className="sm:text-2xl lg:text-4xl text-xl font-bold neon-text mb-8">
             Mi Libro
           </h2>
-          <h3 className="sm:text-xl lg:text-xl text-xl font-bold mb-2">
+          <h3 className="sm:text-xl lg:text-xl text-xs font-bold mb-2">
             "Desarrollo de SOFTWARE"
           </h3>
           <p className="sm:text-sm lg:text-md text-xs text-gray-200 mb-2">
