@@ -22,7 +22,7 @@ export default function MyBook() {
             "MIEDOS, MITOS Y REALIDAD"
           </p>
           <p className="sm:text-sm lg:text-md text-xs">
-            Disponible en Amazon en versión tapa blanda y Kindle. Link sobre el libro.
+            Disponible en Amazon en versión tapa blanda. Link sobre el libro.
           </p>
         </div>
         <div className="mx-auto">
@@ -39,18 +39,21 @@ export default function MyBook() {
       </div>
       <p className="sm:text-sm lg:text-md leading-6 text-xs mt-8 text-left">
         Hay una frase que se repite como un eco en la cabeza de muchas personas
-        que se acercan al mundo de la programación después de los 40: <br />
-        “Ya llegué tarde.” <br />
-        No hace falta que nadie la diga en voz alta. Está en los comentarios de
-        redes, en los videos donde aparece gente muy joven hablando de
-        tecnologías nuevas, en los memes de “junior de 20 años con 10 años de
-        experiencia”. Y, sobre todo, está dentro de la propia cabeza del lector.
+        que se acercan al mundo de la programación después de los 40: “Ya llegué
+        tarde.” A esa duda histórica hoy se le suma un nuevo fantasma: "Si la
+        Inteligencia Artificial y los agentes escriben código solos, ¿qué
+        espacio queda para mí?" Está en las redes, en la velocidad con la que
+        surgen nuevas herramientas y en el ruido constante del mercado. Y, sobre
+        todo, está dentro de la propia cabeza del lector.
         <br />
         La idea no es pintar un mundo color de rosa ni vender la ilusión de que
-        la edad no importa para nada. Importa!. Cambia el contexto, la energía
-        disponible, el tiempo libre, la urgencia económica. <br />
-        Pero eso no significa que la puerta esté cerrada. Significa que el plan
-        tiene que ser distinto.
+        la edad o el paradigma actual no importan. ¡Importan! Cambia el tiempo
+        disponible, la urgencia económica y la forma en que aprendemos. Pero la
+        llegada de la IA no cerró la puerta; cambió la cerradura. Hoy el valor
+        no está en memorizar sintaxis a toda velocidad, sino en saber qué
+        construir, cómo estructurarlo y qué problemas resolver. La experiencia
+        de vida ya no es una desventaja: es el criterio que guía a la
+        tecnología. El plan simplemente tiene que ser distinto.
       </p>
     </section>
   );
