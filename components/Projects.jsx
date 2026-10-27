@@ -6,73 +6,114 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
-    title: "CMS Restó",
+    title: "CMS Restó (SaaS)",
     image: "/resto.webp",
     link: "https://cms-resto.vercel.app/",
     github: "https://github.com/AlbertCarri/cms-supabase",
+    info: "SaaS para crear una carta de menú que se pueda leer con un código QR desde cualquier smartphone con navegador.",
+    problem:"Existen muchos servicios que ofrecen una herramienta para cargar menús que se puedan leer escaneando un simple código QR, pero son muy complejos. Esta versión es simple y real para un negocio gastronómico.",
+    solution:"CMS full-stack con autenticación, CRUD y despliegue en producción. Tiene la opción de cargar hasta 20 productos en la versión gratuita, y sin límite abonando un plan de suscripción mensual a través de MercadoPago.",
+    stack:"Next.js / React, TypeScript, Supabase, Tailwind, Zod y Mercado Pago. Subido a producción en Vercel",
+
   },
   {
     id: 2,
-    title: "App del Clima",
-    image: "/clima.webp",
-    link: "https://groundhog-weather.vercel.app/",
-    github: "https://github.com/AlbertCarri/groundhog-weather-typescript",
-  },
-  {
-    id: 3,
-    title: "Juego del tetris",
-    image: "/tetris.webp",
-    link: "https://tetris-javascript-2024.netlify.app/",
-    github: "https://github.com/AlbertCarri/tetris-game",
-  },
-  {
-    id: 4,
     title: "Página UmamiVeg",
     image: "/umamiveg.webp",
     link: "https://umamiveg.vercel.app//",
     github: "https://github.com/AlbertCarri/umamiveg",
+    info:"Pagina interactiva para emprendimiendo gastronómico de comida vegana",
+    problem:"Las opciones de Whatsapp business solo ofrecen una tienda con productos pero muy pocos detalles, y a veces un producto tiene una historia.",
+    solution:"Esta página viene a solucionar esa falta de orden y detalles, además ofrece un carrito de compras que se integra muy bien con el whatsapp común.",
+    stack:"Next.js / React, JavaScript, Supabase, Tailwind y OpenRouter para el chatbot. Subido a producción en Vercel",
   },
   {
-    id: 5,
-    title: "Retos de código",
-    image: "/retosdecodigo.webp",
-    link: "https://codechallenge.edelbyte.com.ar/",
-    github: "https://github.com/AlbertCarri/codewar-alberto",
-  },
-  {
-    id: 6,
-    title: "Juego del Trivia",
-    image: "/triviaciencias.webp",
-    link: "https://trivia-ciencia.vercel.app/",
-    github: "https://github.com/AlbertCarri/trivia-ciencia",
-  },
-  {
-    id: 7,
+    id: 3,
     title: "ttf to woff/woff2",
     image: "/woff.webp",
     link: "https://woff-converter.vercel.app/",
     github: "https://github.com/AlbertCarri/woff-converter",
+    info:"",
+    problem:"",
+    solution:"",
+    stack:"",
   },
   {
-    id: 8,
-    title: "SUDOKU",
-    image: "/sudoku.webp",
-    link: "https://sudoku.edelbyte.com.ar/",
-    github: "https://github.com/AlbertCarri/sudoku-game",
-  },
-  {
-    id: 9,
+    id: 4,
     title: "UI components",
     image: "/componentsui.webp",
     link: "https://uicomponents.edelbyte.com.ar/",
     github: "https://github.com/AlbertCarri/ui-components",
+    info:"",
+    problem:"",
+    solution:"",
+    stack:"",
   },
   {
-    id: 10,
+    id: 5,
     title: "Astróloca",
     image: "/astroloca.webp",
     link: "https://astroloca-bot.vercel.app/",
     github: "https://github.com/AlbertCarri/astroloca-bot",
+    info:"",
+    problem:"",
+    solution:"",
+    stack:"",
+  },
+  {
+    id: 6,
+    title: "App del Clima",
+    image: "/clima.webp",
+    link: "https://groundhog-weather.vercel.app/",
+    github: "https://github.com/AlbertCarri/groundhog-weather-typescript",
+    info:"",
+    problem:"",
+    solution:"",
+    stack:"",
+  },
+  {
+    id: 7,
+    title: "Juego del tetris",
+    image: "/tetris.webp",
+    link: "https://tetris-javascript-2024.netlify.app/",
+    github: "https://github.com/AlbertCarri/tetris-game",
+    info:"",
+    problem:"",
+    solution:"",
+    stack:"",
+  },
+  {
+    id: 8,
+    title: "Retos de código",
+    image: "/retosdecodigo.webp",
+    link: "https://codechallenge.edelbyte.com.ar/",
+    github: "https://github.com/AlbertCarri/codewar-alberto",
+    info:"",
+    problem:"",
+    solution:"",
+    stack:"",
+  },
+  {
+    id: 9,
+    title: "Juego del Trivia",
+    image: "/triviaciencias.webp",
+    link: "https://trivia-ciencia.vercel.app/",
+    github: "https://github.com/AlbertCarri/trivia-ciencia",
+    info:"",
+    problem:"",
+    solution:"",
+    stack:"",
+  },
+  {
+    id: 10,
+    title: "SUDOKU",
+    image: "/sudoku.webp",
+    link: "https://sudoku.edelbyte.com.ar/",
+    github: "https://github.com/AlbertCarri/sudoku-game",
+    info:"",
+    problem:"",
+    solution:"",
+    stack:"",
   },
 ];
 
@@ -80,6 +121,8 @@ const Projects = () => {
   const [startIndex, setStartIndex] = useState(0);
   const [visibleImages, setVisibleImages] = useState(3);
   const [imageWidth, setImageWidth] = useState(350);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalTheme, setModalTheme] = useState(1);
 
   useEffect(() => {
     console.log("window:", typeof window);
@@ -107,6 +150,11 @@ const Projects = () => {
     }
   }, []);
 
+  const openModal = (id) => {
+    setModalOpen(true);
+    setModalTheme(id - 1);
+  };
+
   const nextSlide = () => {
     if (startIndex < projects.length - visibleImages) {
       setStartIndex(startIndex + 1);
@@ -120,8 +168,11 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="h-svh md:py-20 py-4 lg:mt-0 mt-16">
-      <h2 className="md:text-3xl text-xl font-bold mb-10 neon-text text-center">
+    <section
+      id="projects"
+      className="h-svh md:py-20 py-4 lg:scroll-mt-24 scroll-mt-8"
+    >
+      <h2 className="md:text-3xl lg:text-5xl text-xl font-bold mb-10 neon-text text-center">
         Mis proyectos terminados
       </h2>
 
@@ -152,20 +203,13 @@ const Projects = () => {
               <div className="flex h-1/2 justify-center items-center p-4">
                 <div className="flex flex-col text-center">
                   <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                  <a
-                    href={project.link}
-                    target="blank"
-                    className="neon-text-menu hover:neon-text-menu-hover"
+                  <button
+                    type="button"
+                    onClick={() => openModal(project.id)}
+                    className="text-xl text-violet-500 cursor-pointer"
                   >
-                    Visitar Web
-                  </a>
-                  <a
-                    href={project.github}
-                    target="blank"
-                    className="neon-text-menu hover:neon-text-menu-hover mt-2"
-                  >
-                    Ver código en Github
-                  </a>
+                    Ver más
+                  </button>
                 </div>
               </div>
             </div>
@@ -187,8 +231,79 @@ const Projects = () => {
           className="md:w-24 md:h-24 w-4 h-4"
         />
       </div>
+      {modalOpen && (
+        <div className="fixed flex inset-0 z-20 items-center justify-center bg-black/50 backdrop-blur-xs">
+          <div className="w-3/4 border border-gray-100 rounded-xl p-6 bg-gray-800">
+            <div className="flex md:flex-row flex-col">
+              <div className="w-1/2">
+                <Image
+                  src={projects[modalTheme].image || "/placeholder.png"}
+                  alt={projects[modalTheme].title}
+                  width={400}
+                  height={400}
+                  loading="lazy"
+                  className="mx-auto rounded-lg"
+                />
+              </div>
+              <div className="w-1/2 mx-auto my-auto ">
+                <h3 className="md:text-5xl text-xl font-bold mb-2">
+                  {projects[modalTheme].title}
+                </h3>
+                <a
+                  href={projects[modalTheme].link}
+                  target="blank"
+                  className="block mt-8 text-xl md:text-2xl neon-text-menu hover:neon-text-menu-hover"
+                >
+                  Visitar Web
+                </a>
+                <br />
+                <a
+                  href={projects[modalTheme].github}
+                  target="blank"
+                  className="block text-xl md:text-2xl neon-text-menu hover:neon-text-menu-hover mt-2"
+                >
+                  Ver código en Github
+                </a>
+              </div>
+            </div>
+            <div>
+              <p className="text-xl mt-6">Descripción:{projects[modalTheme].info}</p>
+              <p className="text-xl">Problema:{projects[modalTheme].problem}</p>
+              <p className="text-xl">Solución:{projects[modalTheme].solution}</p>
+              <p className="text-xl">Stack:{projects[modalTheme].stack}</p>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setModalOpen(false)}
+              className="block mx-auto mt-3 bg-amber-600 py-2 px-3 rounded-lg cursor-pointer"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
 
 export default Projects;
+
+{
+  /*
+  <a
+                    href={project.link}
+                    target="blank"
+                    className="neon-text-menu hover:neon-text-menu-hover"
+                  >
+                    Visitar Web
+                  </a>
+                  <a
+                    href={project.github}
+                    target="blank"
+                    className="neon-text-menu hover:neon-text-menu-hover mt-2"
+                  >
+                    Ver código en Github
+                  </a>
+  / */
+}

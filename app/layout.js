@@ -1,11 +1,11 @@
 import "./globals.css";
-import { Press_Start_2P } from "next/font/google";
+import { Share_Tech_Mono } from "next/font/google";
 import Header from "../components/Header"
 import Footer from "../components/Footer";
 import React from "react";
 import { Analytics } from "@vercel/analytics/next"
 
-const pressStart2P = Press_Start_2P({ subsets: ["latin"], weight: "400" });
+const shareTechMono = Share_Tech_Mono({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "Retro Arcade Portfolio",
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         />
         <meta property="og:type" content="website" />
       </head>
-      <body className={pressStart2P.className}>
+      <body className={shareTechMono.className}>
         <div className="min-h-screen bg-gray-900 text-white">
           <Header />
           {children}
