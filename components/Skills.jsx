@@ -31,3 +31,32 @@ const Skills = () => {
 
 export default Skills
 
+{
+  /*
+  Habilidades (versión actualizada)
+Frontend
+TypeScript · React · Next.js (App Router) · Tailwind CSS · shadcn/ui · Componentes accesibles
+
+Backend & Datos
+Supabase (Auth, Postgres, Storage, Edge Functions) · APIs REST
+
+IA & Metodologías
+Agentes de IA · Spec-Driven Development (SDD) · Organic-Driven Development (ODD) · Prompt engineering orientado a código · Vibe coding + limpieza/refactor post-generación
+
+Herramientas
+Git · Vercel · Mercado Pago (integraciones) · Figma (nivel diseño)
+
+Libro (más abajo)
+“Desarrollo de SOFTWARE – Aprender programación después de los 40”
+Reflexiones sobre miedos, mitos y la realidad de aprender a programar en una etapa de la vida distinta, en la era de la IA y los agentes.
+Disponible en Amazon (tapa blanda).
+
+Cierre / Contacto
+Abierto a oportunidades junior/mid en frontend o full-stack, freelance o empleo remoto.
+Priorizo equipos que valoren claridad, criterio y trabajo bien hecho.
+
+Email: [tu mail]
+LinkedIn: [link]
+GitHub: github.com/AlbertCarri
+  */
+}
