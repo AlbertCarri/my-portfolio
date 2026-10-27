@@ -31,7 +31,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="flex flex-col h-svh md:py-20 p-4 justify-center">
+    <section id="contact" className="flex flex-col h-svh scroll-mt-24 md:py-20 p-4 justify-center">
       <h2 className="md:text-3xl text-xl font-bold mb-10 neon-text text-center">Inserte una ficha para continuar</h2>
       <form onSubmit={handleSubmit} method="post" className="relative md:w-1/2 w-full mx-auto text-sm">
         <div className="mb-4">
