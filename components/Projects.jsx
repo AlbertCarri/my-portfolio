@@ -11,10 +11,12 @@ const projects = [
     link: "https://cms-resto.vercel.app/",
     github: "https://github.com/AlbertCarri/cms-supabase",
     info: "SaaS para crear una carta de menú que se pueda leer con un código QR desde cualquier smartphone con navegador.",
-    problem:"Existen muchos servicios que ofrecen una herramienta para cargar menús que se puedan leer escaneando un simple código QR, pero son muy complejos. Esta versión es simple y real para un negocio gastronómico.",
-    solution:"CMS full-stack con autenticación, CRUD y despliegue en producción. Tiene la opción de cargar hasta 20 productos en la versión gratuita, y sin límite abonando un plan de suscripción mensual a través de MercadoPago.",
-    stack:"Next.js / React, TypeScript, Supabase, Tailwind, Zod y Mercado Pago. Subido a producción en Vercel",
-
+    problem:
+      "Existen muchos servicios que ofrecen una herramienta para cargar menús que se puedan leer escaneando un simple código QR, pero son muy complejos. Esta versión es simple y real para un negocio gastronómico.",
+    solution:
+      "CMS full-stack con autenticación, CRUD y despliegue en producción. Tiene la opción de cargar hasta 20 productos en la versión gratuita, y sin límite abonando un plan de suscripción mensual a través de MercadoPago.",
+    stack:
+      "Next.js / React, TypeScript, Supabase, Tailwind, Zod y Mercado Pago. Subido a producción en Vercel",
   },
   {
     id: 2,
@@ -22,10 +24,13 @@ const projects = [
     image: "/umamiveg.webp",
     link: "https://umamiveg.vercel.app//",
     github: "https://github.com/AlbertCarri/umamiveg",
-    info:"Pagina interactiva para emprendimiendo gastronómico de comida vegana",
-    problem:"Las opciones de Whatsapp business solo ofrecen una tienda con productos pero muy pocos detalles, y a veces un producto tiene una historia.",
-    solution:"Esta página viene a solucionar esa falta de orden y detalles, además ofrece un carrito de compras que se integra muy bien con el whatsapp común.",
-    stack:"Next.js / React, JavaScript, Supabase, Tailwind y OpenRouter para el chatbot. Subido a producción en Vercel",
+    info: "Pagina interactiva para emprendimiendo gastronómico de comida vegana",
+    problem:
+      "Las opciones de Whatsapp business solo ofrecen una tienda con productos pero muy pocos detalles, y a veces un producto tiene una historia.",
+    solution:
+      "Esta página viene a solucionar esa falta de orden y detalles, además ofrece un carrito de compras que se integra muy bien con el whatsapp común.",
+    stack:
+      "Next.js / React, JavaScript, Supabase, Tailwind y OpenRouter para el chatbot. Subido a producción en Vercel",
   },
   {
     id: 3,
@@ -33,10 +38,10 @@ const projects = [
     image: "/woff.webp",
     link: "https://woff-converter.vercel.app/",
     github: "https://github.com/AlbertCarri/woff-converter",
-    info:"",
-    problem:"",
-    solution:"",
-    stack:"",
+    info: "",
+    problem: "",
+    solution: "",
+    stack: "",
   },
   {
     id: 4,
@@ -44,10 +49,10 @@ const projects = [
     image: "/componentsui.webp",
     link: "https://uicomponents.edelbyte.com.ar/",
     github: "https://github.com/AlbertCarri/ui-components",
-    info:"",
-    problem:"",
-    solution:"",
-    stack:"",
+    info: "",
+    problem: "",
+    solution: "",
+    stack: "",
   },
   {
     id: 5,
@@ -55,10 +60,10 @@ const projects = [
     image: "/astroloca.webp",
     link: "https://astroloca-bot.vercel.app/",
     github: "https://github.com/AlbertCarri/astroloca-bot",
-    info:"",
-    problem:"",
-    solution:"",
-    stack:"",
+    info: "",
+    problem: "",
+    solution: "",
+    stack: "",
   },
   {
     id: 6,
@@ -66,10 +71,10 @@ const projects = [
     image: "/clima.webp",
     link: "https://groundhog-weather.vercel.app/",
     github: "https://github.com/AlbertCarri/groundhog-weather-typescript",
-    info:"",
-    problem:"",
-    solution:"",
-    stack:"",
+    info: "",
+    problem: "",
+    solution: "",
+    stack: "",
   },
   {
     id: 7,
@@ -77,10 +82,10 @@ const projects = [
     image: "/tetris.webp",
     link: "https://tetris-javascript-2024.netlify.app/",
     github: "https://github.com/AlbertCarri/tetris-game",
-    info:"",
-    problem:"",
-    solution:"",
-    stack:"",
+    info: "",
+    problem: "",
+    solution: "",
+    stack: "",
   },
   {
     id: 8,
@@ -88,10 +93,10 @@ const projects = [
     image: "/retosdecodigo.webp",
     link: "https://codechallenge.edelbyte.com.ar/",
     github: "https://github.com/AlbertCarri/codewar-alberto",
-    info:"",
-    problem:"",
-    solution:"",
-    stack:"",
+    info: "",
+    problem: "",
+    solution: "",
+    stack: "",
   },
   {
     id: 9,
@@ -99,10 +104,10 @@ const projects = [
     image: "/triviaciencias.webp",
     link: "https://trivia-ciencia.vercel.app/",
     github: "https://github.com/AlbertCarri/trivia-ciencia",
-    info:"",
-    problem:"",
-    solution:"",
-    stack:"",
+    info: "",
+    problem: "",
+    solution: "",
+    stack: "",
   },
   {
     id: 10,
@@ -110,10 +115,10 @@ const projects = [
     image: "/sudoku.webp",
     link: "https://sudoku.edelbyte.com.ar/",
     github: "https://github.com/AlbertCarri/sudoku-game",
-    info:"",
-    problem:"",
-    solution:"",
-    stack:"",
+    info: "",
+    problem: "",
+    solution: "",
+    stack: "",
   },
 ];
 
@@ -170,7 +175,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="h-svh md:py-20 py-4 lg:scroll-mt-24 scroll-mt-8"
+      className="h-svh md:py-20 py-4 lg:scroll-mt-12 scroll-mt-8"
     >
       <h2 className="md:text-3xl lg:text-5xl text-xl font-bold mb-10 neon-text text-center">
         Mis proyectos terminados
@@ -188,9 +193,9 @@ const Projects = () => {
             <div
               key={project.id}
               style={{ width: `${imageWidth}px` }}
-              className="bg-gray-800 flex-shrink-0 rounded-lg pixel-borders mx-4"
+              className="bg-gray-800 shrink-0 rounded-lg pixel-borders mx-4"
             >
-              <div className="flex h-1/2">
+              <div className="flex h-2/3">
                 <Image
                   src={project.image || "/placeholder.png"}
                   alt={project.title}
@@ -200,7 +205,7 @@ const Projects = () => {
                   className="w-full rounded-lg"
                 />
               </div>
-              <div className="flex h-1/2 justify-center items-center p-4">
+              <div className="flex h-1/3 justify-center items-center p-4">
                 <div className="flex flex-col text-center">
                   <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                   <button
@@ -233,7 +238,7 @@ const Projects = () => {
       </div>
       {modalOpen && (
         <div className="fixed flex inset-0 z-20 items-center justify-center bg-black/50 backdrop-blur-xs">
-          <div className="w-3/4 border border-gray-100 rounded-xl p-6 bg-gray-800">
+          <div className="w-3/4 pixel-borders rounded-xl p-3 bg-gray-800">
             <div className="flex md:flex-row flex-col">
               <div className="w-1/2">
                 <Image
@@ -246,7 +251,7 @@ const Projects = () => {
                 />
               </div>
               <div className="w-1/2 mx-auto my-auto ">
-                <h3 className="md:text-5xl text-xl font-bold mb-2">
+                <h3 className="md:text-4xl text-xl font-bold mb-2">
                   {projects[modalTheme].title}
                 </h3>
                 <a
@@ -267,10 +272,22 @@ const Projects = () => {
               </div>
             </div>
             <div>
-              <p className="text-xl mt-6">Descripción:{projects[modalTheme].info}</p>
-              <p className="text-xl">Problema:{projects[modalTheme].problem}</p>
-              <p className="text-xl">Solución:{projects[modalTheme].solution}</p>
-              <p className="text-xl">Stack:{projects[modalTheme].stack}</p>
+              <p className="text-md mt-6">
+                <span className="neon-text text-xl">Descripción:</span>
+                {projects[modalTheme].info}
+              </p>
+              <p className="text-md">
+                <span className="neon-text text-xl">Problema:</span>
+                {projects[modalTheme].problem}
+              </p>
+              <p className="text-md">
+                <span className="neon-text text-xl">Solución:</span>
+                {projects[modalTheme].solution}
+              </p>
+              <p className="text-md">
+                <span className="neon-text text-xl">Stack:</span>
+                {projects[modalTheme].stack}
+              </p>
             </div>
 
             <button

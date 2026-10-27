@@ -20,14 +20,17 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "moduleResolution": "node"
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "app/sitemap.js", "app/robots.js"  ],
+    "**/*.tsx",
+    "app/sitemap.js",
+    "app/robots.js"
+  ],
   "exclude": [
     "node_modules"
   ]
