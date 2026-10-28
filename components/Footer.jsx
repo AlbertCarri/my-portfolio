@@ -28,7 +28,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-center mt-4 text-sm">
-          © 2025 Retro Dev. All rights reserved.
+          © 2026 Retro Dev. All rights reserved.
         </p>
         <a
           href="mailto:info@edelbyte.com.ar"

@@ -19,8 +19,8 @@ const Hero = () => {
         Construyo aplicaciones web con TypeScript, React/Next.js y Supabase.
         <br />
         Trabajo con agentes de IA, Spec-Driven Development {"(SDD)"} y
-        Organic-Driven Development {"(ODD)"} para pasar de la intención clara al
-        código verificado de forma más rápida y controlada.
+        Organic-Driven Development {"(ODD)"} para pasar de una idea o especificación
+        a un código fácil de controlar. 
       </p>
     </section>
   );
