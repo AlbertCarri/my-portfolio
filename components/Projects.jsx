@@ -100,17 +100,6 @@ const projects = [
   },
   {
     id: 9,
-    title: "Retos de código",
-    image: "/retosdecodigo.webp",
-    link: "https://codechallenge.edelbyte.com.ar/",
-    github: "https://github.com/AlbertCarri/codewar-alberto",
-    info: "Un proyecto para practicar.",
-    problem: "Solo practicar.",
-    solution: "Practicar .",
-    stack: "Next.js, TypeScript y Tailwind",
-  },
-  {
-    id: 10,
     title: "Juego Asteroids",
     image: "/asteroids.webp",
     link: "https://albertcarri.github.io/asteroids-v0-agent/",
