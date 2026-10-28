@@ -5,7 +5,7 @@ export default function MyBook() {
   return (
     <section
       id="mybook"
-      className="flex flex-col w-full lg:h-svh mt-12 lg:mt-0 p-2 items-center justify-center "
+      className="flex flex-col w-full lg:h-svh mt-12 mb-12 lg:mt-0 p-2 items-center justify-center "
     >
       <div className="flex flex-col lg:flex-row w-full mt-8 p-4 items-center">
         <div className="text-left">

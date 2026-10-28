@@ -14,6 +14,14 @@ const Header = () => {
           <ul className="flex md:flex-row flex-col md:gap-x-10 md:justify-end justify-center mt-1">
             <li>
               <Link
+                href="#header"
+                className="neon-text-menu hover:neon-text-menu"
+              >
+                Inicio
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="#about"
                 className="neon-text-menu hover:neon-text-menu"
               >
@@ -34,14 +42,6 @@ const Header = () => {
                 className="neon-text-menu hover:neon-text-menu"
               >
                 Habilidades
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#mybook"
-                className="neon-text-menu hover:neon-text-menu"
-              >
-                Libro
               </Link>
             </li>
             <li>
